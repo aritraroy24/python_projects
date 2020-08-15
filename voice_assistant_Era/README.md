@@ -5,12 +5,12 @@
 ![](https://img.shields.io/badge/visual_studio_code-1.48.0-181717?colorA=ae36d6&style=for-the-badge&logo=visual-studio-code)
 ---
 ---
-# :small_orange_diamond: credentials.json
+# :small_orange_diamond: credentials.json :notebook_with_decorative_cover:
 ### For retrieving contact details from Google Contacts :busts_in_silhouette: :e-mail: :calling:
 After generating Gmail API, the CLIENT CONFIGURATION will be saved as ***```credentials.json```***. It should be kept in the working directory. otherwise contacts details can't be fetched from Google Contacts.
 # :small_orange_diamond: token.pickle :notebook:
 All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
 # :small_orange_diamond: era_ai.py :speaking_head:
-### Simple voice assistant program made with simple if-else statements
+### Simple voice assistant program made with simple if-else statements :bust_in_silhouette:
 1. Tells ***```'I'm fine'```*** when asked ***```how are you```***
 2. Tells ***```It's good to know that you are fine.```*** if the word ***```fine```*** is in the query
