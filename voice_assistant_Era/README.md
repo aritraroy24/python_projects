@@ -34,4 +34,4 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 14. ***```Searches in Google```*** about the query if ***```what```*** or ***```who```*** or ***```where```*** or ***```can you```*** in the query<br><br>
 15. ***```Sends a mail to the contact```*** if the query matches with one of the ***```Google Contacts```***
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the ***contacts*** and associated ***email ids*** can be fetched using ***Gmail API***<br>
-<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: for more details about **unlimited retrieving of contact details using Gmail API** please read my article published in @Medium ```(https://medium.com/@aritraroycoc/retrieving-email-and-phone-no-7c60ad3a9b69)```<br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: for more details about **unlimited retrieving of contact details using Gmail API** please read my article published in @Medium (https://medium.com/@aritraroycoc/retrieving-email-and-phone-no-7c60ad3a9b69)<br><br>
