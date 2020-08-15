@@ -1,16 +1,18 @@
 from __future__ import print_function
 import pyttsx3
 import datetime
+import smtplib
 import speech_recognition as sr
 import wikipedia
 import webbrowser
 import os
 import random
-
+from twilio.rest import Client
 import pickle
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+import requests
 import json
 
 engine = pyttsx3.init('sapi5')
@@ -34,20 +36,28 @@ def wishMe():
         speak("Good Morning!")
     elif hour >= 12 and hour < 18:
         speak("Good Afternoon!")
-    elif hour >= 18 and hour < 20:
+    elif hour >= 18 and hour < 23:
         speak("Good Evening!")
     else:
         speak("Good Night, sir...It's good for health to have dinner and go to bed now...as you know Early to bed and early to rise, makes a man healthy, wealthy and wise.")
-        speak("Thanks for using Era, sir!!!")
+        speak("Thanks for using Era")
         exit()
         
     speak("I'm Era, your personal voice assistant. Please tell how may I help you?")
 
+def sendEmail(to, content):
+    # It sends an email
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.login('your_email@gmail.com',
+                 'your_password')    # Enter your password
+    server.sendmail('your_email@gmail.com', to, content)
+    server.close()
+
 
 def fetchNameEmail():
-    """Shows basic usage of the People API.
-    Prints the name of the first 10 connections.
-    """
+    """Fetches name and their email ids from google contacts"""
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
@@ -70,7 +80,6 @@ def fetchNameEmail():
     service = build('people', 'v1', credentials=creds)
 
     # Call the People API
-    print('List of all name with email id and phone number:\n')
     results = service.people().connections().list(
         resourceName='people/me',
         pageSize=1500,
@@ -88,13 +97,19 @@ def fetchNameEmail():
             email = emails[0]['value']
             emailList.append(email)
     nameEmailList = zip(name1List, emailList)
-    return nameEmailList
+    sortedName1List = sorted(nameEmailList, key = lambda x: x[0]) 
+    return sortedName1List
     
 
-def fetchPhoneNo():
-    """Shows basic usage of the People API.
-    Prints the name of the first 10 connections.
-    """
+def name1Lower(name1List):
+    """Makes all the names lowercase for name-email id list"""
+    name1ListLowerSplit = []
+    name1ListLower = list(map(lambda x:x.lower(), name1List))
+    name1ListLowerSplit = list(map(lambda x: x.split(), name1ListLower))
+    return name1ListLowerSplit
+
+def fetchNamePhoneNo():
+    """Fetches name and their phone numbers from google contacts"""
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
@@ -117,26 +132,40 @@ def fetchPhoneNo():
     service = build('people', 'v1', credentials=creds)
 
     # Call the People API
-    print('List of all name with email id and phone number:\n')
     results = service.people().connections().list(
         resourceName='people/me',
         pageSize=1500,
         personFields='names,emailAddresses,phoneNumbers').execute()
     connections = results.get('connections', [])
 
-    nameList = []
-    emailList = []
+    name2List = []
     phoneNoList = []
     for person in connections:
         names = person.get('names', [])
         phones = person.get('phoneNumbers', [])
 
-        if names and phones:
+        if phones:
             name = names[0].get('displayName')
-            nameList.append(name)
+            name2List.append(name)
             phone = phones[0]['value']
             phoneNoList.append(phone)
-    
+    namePhoneNoList = zip(name2List, phoneNoList)
+    sortedName2List = sorted(namePhoneNoList, key = lambda x: x[0])
+    return sortedName2List
+
+def name2Lower(name2List):
+    """Makes all the names lowercase for name-phone number list"""
+    name2ListLowerSplit = []
+    name2ListLower = list(map(lambda x:x.lower(), name2List))
+    name2ListLowerSplit = list(map(lambda x: x.split(), name2ListLower))
+    return name2ListLowerSplit
+
+def queryLowerSplit(query):
+    """Makes all the query elements lowercase"""
+    queryLower = query.lower()
+    lst = []
+    lst = queryLower.split()
+    return lst
 
 def takeCommand():
     # It takes microphone input from user and returns string output
@@ -159,7 +188,27 @@ def takeCommand():
     return query
 
 def splitWords(query):
-    return (lst[0].split()) 
+    return (lst[0].split())
+
+
+def givenews():
+    speak("News for today..Lets begin")
+    url = "http://newsapi.org/v2/top-headlines?country=in&apiKey=cbdbe6b492824c9b837b508c4d0fdc92"
+    news = requests.get(url).text
+    news_dict = json.loads(news)
+    arts = news_dict['articles']
+    i = 1
+    for article in arts[:-1]:
+        speak(article['title'])
+        print(f"\n{i}. {article['title']}")
+        speak("Moving on to the next news....")
+        i+=1
+    for article in arts[-1:]:
+            speak(article['title'])
+            print(f"\n{i}. {article['title']}")
+            speak("Thanks for listening...")
+    speak("Stay tuned for more updated news")
+
 
 if __name__ == '__main__':
     wishMe()
@@ -217,11 +266,73 @@ if __name__ == '__main__':
         elif 'email to' in query or 'send a mail' in query or 'mail to' in query:
             # This will send mail only if there is any matching name in last of query
             # the last word should be in all strings contain a name which is exist as key in nameList
+            zippedNameEmailList = fetchNameEmail()
             name1List, emailList = zip(*zippedNameEmailList)
-            queryList = splitWords(query)
+            name1FinalList = name1Lower(name1List)
+            queryList = queryLowerSplit(query)
             i = 0
-            for item1 in name1List:
-                for item2 in queryList:
-                    if item2 == item1:
-                        break
+            for item in name1FinalList:
                 i+=1
+                for item1 in item:
+                    for item2 in queryList:
+                        if item2 == item1:
+                            try:
+                                speak("What is your message ?")
+                                content = takeCommand()
+                                to = emailList[i-1]
+                                sendEmail(to, content)
+                                speak("Email has been sent")
+                                break
+                            except Exception as e:
+                                print(e)
+                                speak("Sorry sir, something went wrong and i am not able to send your email right now.")
+                                break
+                    else:
+                        continue
+                    break
+                else:
+                    continue
+                break
+            if i+1 > len(name1FinalList):
+                speak("Contact not found")
+
+        elif 'phone' in query or 'make call' in query or 'call' in query:
+            zippednamePhoneNoList = fetchNamePhoneNo()
+            name2List, phoneNoList = zip(*zippednamePhoneNoList)
+            name2FinalList = name2Lower(name2List)
+            queryList = queryLowerSplit(query)
+            i = 0
+            for item in name2FinalList:
+                i+=1
+                for item1 in item:
+                    for item2 in queryList:
+                        if item2 == item1:
+                            try:
+                                # Your Account Sid and Auth Token from twilio.com/console
+                                # DANGER! This is insecure. See http://twil.io/secure
+                                account_sid = 'AC7f41f062af2c24f4b4a91d1956f68d64'
+                                auth_token = '05817cedcb38110630119d26af210889'
+                                client = Client(account_sid, auth_token)
+
+                                call = client.calls.create(
+                                                        twiml='<Response><Say>Ahoy, World!</Say></Response>',
+                                                        to = phoneNoList[i-1],
+                                                        from_='+19164684855'
+                                                    )
+                                speak("Calling has been initiated")
+                                break
+                            except Exception as e:
+                                print(e)
+                                speak("Sorry sir, something went wrong and i am not able to call right now.")
+                                break
+                    else:
+                        continue
+                    break
+                else:
+                    continue
+                break
+            if i+1 > len(name2FinalList):
+                speak("Contact not found")
+
+        elif 'headlines' in query or 'news' in query or 'headline' in query:
+            givenews()
