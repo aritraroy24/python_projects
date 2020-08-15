@@ -6,8 +6,10 @@
 ---
 ---
 # :small_orange_diamond: credentials.json
-### For retrieving contact details from Google Contacts :e-mail: :calling: 	:adult:
+### For retrieving contact details from Google Contacts :busts_in_silhouette: :e-mail: :calling:
 After generating Gmail API, the CLIENT CONFIGURATION will be saved as ***```credentials.json```***. It should be kept in the working directory. otherwise contacts details can't be fetched from Google Contacts.
 # :small_orange_diamond: token.pickle :notebook:
 All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
-# :small_orange_diamond:
+# :small_orange_diamond: era_ai.py
+### Simple voice assistant program made with simple if-else statements
+   * 1. Tells ***```'I'm fine'```*** when asked ***```how are you```***
