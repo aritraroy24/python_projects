@@ -45,5 +45,5 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: https://medium.com/@aritraroycoc/retrieving-email-and-phone-no-7c60ad3a9b69<br><br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: To make voice calls i've taken the help of ***Twilio account***
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: One'll need to get ***account_sid*** and ***auth_token*** (shorturl.at/anwE1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: One'll need to get ***account_sid*** and ***auth_token*** (https://www.twilio.com/docs/voice/tutorials/how-to-make-outbound-phone-calls-python)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: Please note, ***One can only make call to the registered number for a limited trial period***. For full access **one'll need to pay**
