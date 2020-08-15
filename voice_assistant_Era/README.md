@@ -11,6 +11,6 @@ After generating Gmail API, the CLIENT CONFIGURATION will be saved as ***```cred
 # :small_orange_diamond: token.pickle :notebook:
 All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
 # :small_orange_diamond: era_ai.py
-### Simple voice assistant program made with simple if-else statements
+### Simple voice assistant program made with simple if-else statements :speaking_head:
 1. Tells ***```'I'm fine'```*** when asked ***```how are you```***
 2. Tells ***```It's good to know that you are fine.```*** if the word ***```fine```*** is in the query
