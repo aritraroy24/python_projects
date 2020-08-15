@@ -7,6 +7,6 @@
 ---
 # credentials.json
 ### For retrieving contact details from Google Contacts :e-mail: :calling: 	:adult:
-After generating Gmail API, the CLIENT CONFIGURATION will be saved as ```credentials.json```. It should be kept in the working directory. otherwise contacts details can't be fetched from Google Contacts.
+After generating Gmail API, the CLIENT CONFIGURATION will be saved as ***```credentials.json```***. It should be kept in the working directory. otherwise contacts details can't be fetched from Google Contacts.
 # token.pickle :notebook:
-All the details will be saved in ```token.pickle``` file and no further retrieving will be occurred if there is no change.
+All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
