@@ -14,4 +14,6 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 ### Simple voice assistant program made with simple if-else statwikipedia is in queryements :bust_in_silhouette:
 1. Tells ***```'I'm fine'```*** when asked ***```how are you```***
 2. Tells ***```It's good to know that you are fine.```*** if the word ***```fine```*** is in the query
-3. ***```Find data about query```***(1st two sentences) from wikipedia if ***```wikipedia```*** is in the query
+3. ***```Finds and tells related data about query```***(first two sentences) from wikipedia if ***```wikipedia```*** is in the query
+4. ***```Opens Spartan14```***(a chemistry software) if ***```spartan```*** is in the query
+   * the target path should be specified ***```(software -> file location -> properties -> target path```***
