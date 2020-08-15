@@ -34,8 +34,8 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 14. ***```Searches in Google```*** about the query if ***```what```*** or ***```who```*** or ***```where```*** or ***```can you```*** in the query<br><br>
 15. ***```Sends a mail to the contact```*** if the query matches with one of the ***```Google Contacts```***
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the ***contacts*** and associated ***email ids*** can be fetched using ***Gmail API***
-<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: for more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: https://medium.com/@aritraroycoc/retrieving-email-and-phone-no-7c60ad3a9b69
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: for more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: https://medium.com/@aritraroycoc/retrieving-email-and-phone-no-7c60ad3a9b69
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: to send mail inbuilt module **smtplib**  is used. But one has to ***less secure apps and google account using G Suite Admin Account***
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: Please note that **it is not normal Google Account and read all the terms and conditions for further approaching**
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: https://support.google.com/a/answer/6260879?hl=en <br><br>
