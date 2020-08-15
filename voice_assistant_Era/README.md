@@ -29,3 +29,6 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 10. Tells us the current local ***```time```*** if ***```time```*** is in the query<br><br>
 11. ***```Opens Visual Studio Code```*** if ***```code```*** is in the query
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the target path should be specified ***(software -> file location -> properties -> target path)***<br><br>
+12. ***```'Quits the application'```*** when ***```quit```*** or ***```close```*** or ***```exit```*** in the query<br><br>
+13. Tells ***```'Thank you sir, I'm always here for you'```*** when ***```awesome```*** or ***```amazing```*** in the query<br><br>
+14. ***```Searches in Google```*** about the query if ***```what```*** or ***```who```*** or ***```where```*** or ***```can you```*** in the query
