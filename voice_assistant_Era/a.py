@@ -53,7 +53,8 @@ def fetchNameEmail():
             email = emails[0]['value']
             emailList.append(email)
     nameEmailList = zip(name1List, emailList)
-    return nameEmailList
+    sortedName1List = sorted(nameEmailList, key = lambda x: x[0]) 
+    return sortedName1List
     
 
 def fetchNamePhoneNo():
@@ -101,12 +102,26 @@ def fetchNamePhoneNo():
             phone = phones[0]['value']
             phoneNoList.append(phone)
     namePhoneNoList = zip(name2List, phoneNoList)
+    
     return namePhoneNoList
 
+def queryLowerSplit(query):
+    queryLower = query.lower()
+    lst = []
+    lst = queryLower.split()
+    return lst
+
+def name1Lower(name1List):
+    name1ListLowerSplit = []
+    name1ListLower = list(map(lambda x:x.lower(), name1List))
+    name1ListLowerSplit = list(map(lambda x: x.split(), name1ListLower))
+    return name1ListLowerSplit
 
 if __name__ == "__main__":
     zippedNameEmailList = fetchNameEmail()
     name1List, emailList = zip(*zippedNameEmailList)
+    name1FinalList = name1Lower(name1List)
+    
     # i = 1
     # for item in name1List:
     #     print(f"{i} {item}")
@@ -115,16 +130,20 @@ if __name__ == "__main__":
     # for item in emailList:
     #     print(f"{i} {item}")
     #     i+=1
-    zippednamePhoneNoList = fetchNamePhoneNo()
-    name2List, phoneNoList = zip(*zippednamePhoneNoList)
-    i = 1
-    for item in name2List:
-        print(f"{i} {item}")
-        i+=1
-    i = 1
-    for item in phoneNoList:
-        print(f"{i} {item}")
-        i+=1
+
+
+    # zippednamePhoneNoList = fetchNamePhoneNo()
+    # name2List, phoneNoList = zip(*zippednamePhoneNoList)
+    # i = 1
+    # for item in name2List:
+    #     print(f"{i} {item}")
+    #     i+=1
+    # i = 1
+    # for item in phoneNoList:
+    #     print(f"{i} {item}")
+    #     i+=1
+
+
     # queryList = ["Send", "a", "mail", "to", "Amit"]
     # i = 0
     # for item1 in name1List:
@@ -135,3 +154,23 @@ if __name__ == "__main__":
     #     i+=1
     # if i+1 > len(name1List):
     #     print(f"Item not found\nj={i+1}")
+
+    query = "I am tinni"
+    queryList = queryLowerSplit(query)
+    i = 0
+    for item in name1FinalList:
+        i+=1
+        for item1 in item:
+            for item2 in queryList:
+                if item2 == item1:
+                    print(f"No - {i}\nitem1-{item1}\nitem2-{item2}")
+                    print(emailList[i])
+                    break
+            else:
+                continue
+            break
+        else:
+            continue
+        break
+    if i+1 > len(name1FinalList):
+        print(f"Item not found\nj={i}")
