@@ -10,7 +10,7 @@
 After generating Gmail API, the CLIENT CONFIGURATION will be saved as ***```credentials.json```***. It should be kept in the working directory. otherwise contacts details can't be fetched from Google Contacts.
 # :small_orange_diamond: token.pickle :notebook:
 All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
-# :small_orange_diamond: era_ai.py
-### Simple voice assistant program made with simple if-else statements :speaking_head:
+# :small_orange_diamond: era_ai.py :speaking_head:
+### Simple voice assistant program made with simple if-else statements
 1. Tells ***```'I'm fine'```*** when asked ***```how are you```***
 2. Tells ***```It's good to know that you are fine.```*** if the word ***```fine```*** is in the query
