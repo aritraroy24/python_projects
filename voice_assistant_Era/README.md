@@ -26,3 +26,6 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the target URL should be specified ***(https://stackoverflow.com/)***
 9. ***```Plays a random somg or changes the song```*** if ***```play song```*** or ***```change song```*** is in the query
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the local folder should be specified where the songs are kept
+10. Tells us the current local ***```time```*** if ***```time```*** is in the query
+11. ***```Opens Visual Studio Code```*** if ***```code```*** is in the query
+<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the target path should be specified ***(software -> file location -> properties -> target path)***
