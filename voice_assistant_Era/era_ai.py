@@ -252,12 +252,12 @@ if __name__ == '__main__':
             codePath = "C:\\Users\\Aritra Roy\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
 
-        elif 'jarvis quit' in query or 'exit' in query or 'close' in query:
+        elif 'quit' in query or 'exit' in query or 'close' in query:
             speak("Thanks for using Era!!!")
             exit()
 
         elif 'awesome' in query or 'wow' in query or 'amazing' in query or 'wonderful' in query:
-            speak("Thank you sir, i am always here for you")
+            speak("Thank you sir, I'm always here for you")
 
         elif 'what' in query or 'who' in query or 'where' in query or 'can you' in query:
             webbrowser.open(f"https://www.google.com/search?&q={query}")
@@ -310,14 +310,14 @@ if __name__ == '__main__':
                             try:
                                 # Your Account Sid and Auth Token from twilio.com/console
                                 # DANGER! This is insecure. See http://twil.io/secure
-                                account_sid = 'AC7f41f062af2c24f4b4a91d1956f68d64'
-                                auth_token = '05817cedcb38110630119d26af210889'
+                                account_sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+                                auth_token = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
                                 client = Client(account_sid, auth_token)
 
                                 call = client.calls.create(
                                                         twiml='<Response><Say>Ahoy, World!</Say></Response>',
                                                         to = phoneNoList[i-1],
-                                                        from_='+19164684855'
+                                                        from_='+1XXXXXXXXXX'
                                                     )
                                 speak("Calling has been initiated")
                                 break
