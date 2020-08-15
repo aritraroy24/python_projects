@@ -3,8 +3,9 @@
 ![](https://img.shields.io/badge/for-you-099450?colorA=b0c92e&colorB=487d3e&style=for-the-badge)
 ![](https://img.shields.io/badge/python-used-bee5ed?colorA=37b6bd&colorB=3c9bb5&style=for-the-badge&logo=python)
 ![](https://img.shields.io/badge/visual_studio_code-1.48.0-181717?colorA=ae36d6&style=for-the-badge&logo=visual-studio-code)
+![](https://img.shields.io/badge/made_with-:heart:-bee5ed?colorA=9bb9bf&colorB=5088ab&style=for-the-badge)
 ---
 ---
 # credentials.json
 ### For retrieving contact details from Google Contacts
-After generating Gmail API, the CLIENT CONFIGURATION will be saved as <strong>credentials.json</strong>. It should be kept in the working directory. otherwise contacts details can't be fetched from Google Contacts.
+After generating Gmail API, the CLIENT CONFIGURATION will be saved as ***credentials.json***. It should be kept in the working directory. otherwise contacts details can't be fetched from Google Contacts.
