@@ -24,7 +24,7 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 7. ***```Opens Google```*** if ***```google```*** is in the query.
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the target URL should be specified ***(https://www.google.co.in/)*** :link:<br><br>
 8. ***```Opens Stack Overflow```*** if ***```stackoverflow```*** is in the query.
-<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The target URL should be specified ***(https://stackoverflow.com/)***<br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The target URL should be specified ***(https://stackoverflow.com/)*** :link:<br><br>
 9. ***```Plays a random somg or changes the song```*** if ***```play song```*** or ***```change song```*** is in the query.
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The local folder should be specified where the songs are kept.<br><br>
 10. Tells us the current local ***```time```*** if ***```time```*** is in the query.<br><br>
@@ -41,7 +41,7 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For futher information please visit https://shorturl.at/alFIV :link: <br><br>
 16. ***```Makes a voice call to the contact```*** if the query matches with one of the ***```Google Contacts```***.
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The ***contacts*** and associated ***phone numbers*** can be fetched using ***Gmail API***.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(https://shorturl.at/hpWX5)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(https://shorturl.at/hpWX5) :link:
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: To make voice calls I've taken the help of ***Twilio account***.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: One'll need to get ***account_sid*** and ***auth_token*** (https://shorturl.at/clnOW) :link:
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: Please note, ***One can only make call to the registered number for a limited trial period***. For full access **one'll need to pay**.
