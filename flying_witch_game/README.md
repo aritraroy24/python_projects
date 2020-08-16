@@ -10,3 +10,6 @@
 :small_blue_diamond: All audio sounds used in the game
 ### image  :city_sunrise: :sunrise_over_mountains: :bridge_at_night:
 :small_blue_diamond: All images used in the game
+### screenshots :camera:
+:small_blue_diamond: Home page Screenshot
+:small_blue_diamond: Game page Screenshot
