@@ -8,5 +8,11 @@
 After generating Gmail API, the ```CLIENT CONFIGURATION``` will be saved as ***```credentials.json```***. It ***```should be kept in the working directory```***. otherwise contacts details can't be fetched from Google Contacts.
 # :small_orange_diamond: token.pickle :memo:
 All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
-# :small_orange_diamond: ccontact.py :ledger:
+# :small_orange_diamond: contact.py :ledger:
 ### Simple program for retrieving contact details from Google Contacts using Gmail API :bust_in_silhouette: :e-mail: :calling:
+##### All the necessary steps for retrieving the contact details from Google Contacts are following -
+:small_blue_diamond: One'll need to get the ```CLIENT CONFIGURATION``` as ***```credentials.json```*** file using ***```Gmail API```***. It should be kept in the **working directory** for functioning.
+:small_blue_diamond: While generating the ```CLIENT CONFIGURATION``` one'll need to give a project name. Please note that ```this project name and the main python program name should be same```.
+:small_blue_diamond: One'll need to then install Google **Client Library** via pip - <br>
+&nbsp;&nbsp;&nbsp;&nbsp;```python
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib```
