@@ -12,6 +12,6 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 ### Simple program for retrieving contact details from Google Contacts using Gmail API :bust_in_silhouette: :e-mail: :calling:
 ##### All the necessary steps for retrieving the contact details from Google Contacts are following -
 :small_blue_diamond: One'll need to get the ```CLIENT CONFIGURATION``` as ***```credentials.json```*** file using ***```Gmail API```***. It should be kept in the **working directory** for functioning. <br><br>
-:small_blue_diamond: While generating the ```CLIENT CONFIGURATION``` one'll need to give a project name. Please note that ```this project name and the main python program name should be same```. <br><br>
-:small_blue_diamond: One'll need to then install Google **Client Library** via pip - <br><br>
+:small_blue_diamond: While generating the ```CLIENT CONFIGURATION``` one'll need to give a project name. Please note that ```this project name and the main python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;program name should be same```. <br><br>
+:small_blue_diamond: One'll need to then install Google **Client Library** via pip - <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib```<br><br>
