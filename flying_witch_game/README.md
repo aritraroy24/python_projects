@@ -22,3 +22,5 @@
 ### Playing Guide :video_game:
    * ***```Up Arrow```*** or ***```Space```*** for ```starting``` and ```playing``` the game
    * ***```Crossbar```*** or ***```Esc```*** for ```quitting``` the game
+<br>
+:12:
