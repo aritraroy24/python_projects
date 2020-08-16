@@ -16,5 +16,5 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 :small_blue_diamond: One'll need to then install **Google Client Library** via pip - <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib```<br><br>
 :small_blue_diamond: The next step is to **select the Gmail Account** from where the contacts will be retrieved.<br><br>
-:small_blue_diamond: For more information about the process, **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(https://shorturl.at/hpWX5)
+:small_blue_diamond: For more information about the process, **unlimited retrieving of contact details using Gmail API** please read my article published in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***```Medium```(https://shorturl.at/hpWX5)
