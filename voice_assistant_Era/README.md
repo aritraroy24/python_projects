@@ -38,7 +38,7 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(https://shorturl.at/hpWX5)
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: To send mail inbuilt module **smtplib**  is used. But one has to ***less secure apps and google account using G Suite Admin Account***
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: Please note, **it is not normal Google Account and read all the terms and conditions for further approaching**
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: https://support.google.com/a/answer/6260879?hl=en <br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For futher information please visit https://shorturl.at/alFIV <br><br>
 16. ***```Makes a voice call to the contact```*** if the query matches with one of the ***```Google Contacts```***
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The ***contacts*** and associated ***phone numbers*** can be fetched using ***Gmail API***
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```*** (https://medium.com/@aritraroycoc/retrieving-email-and-phone-no-7c60ad3a9b69)
