@@ -9,3 +9,4 @@ After generating Gmail API, the ```CLIENT CONFIGURATION``` will be saved as ***`
 # :small_orange_diamond: token.pickle :memo:
 All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
 # :small_orange_diamond: ccontact.py :ledger:
+### Simple program for retrieving contact details from Google Contacts using Gmail API :bust_in_silhouette: :e-mail: :calling:
