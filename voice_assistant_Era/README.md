@@ -13,8 +13,8 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 # :small_orange_diamond: era_ai.py :bust_in_silhouette:
 ### Simple voice assistant program made with simple if-else statwikipedia is in queryements :speaking_head:
 ##### All the tasks (possible by Era) are following -
-1. Tells ***```'I'm fine'```*** when asked ***```how are you```***<br><br>
-2. Tells ***```It's good to know that you are fine```*** if the word ***```fine```*** is in the query<br><br>
+1. Tells ***```'I'm fine'```*** when asked ***```how are you```***.<br><br>
+2. Tells ***```It's good to know that you are fine```*** if the word ***```fine```*** is in the query.<br><br>
 3. ***```Finds and tells related data about query```***(first two sentences) from wikipedia if ***```wikipedia```*** is in the query.<br><br>
 4. It'll say ***```I'm Era - a personal desktop assistant```*** when asked ***```who are you```***.<br><br>
 5. ***```Opens Spartan14```***(a chemistry software) if ***```spartan```*** is in the query.
@@ -26,7 +26,7 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 8. ***```Opens Stack Overflow```*** if ***```stackoverflow```*** is in the query.
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The target URL should be specified ***(https://stackoverflow.com/)***<br><br>
 9. ***```Plays a random somg or changes the song```*** if ***```play song```*** or ***```change song```*** is in the query.
-<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: the local folder should be specified where the songs are kept.<br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The local folder should be specified where the songs are kept.<br><br>
 10. Tells us the current local ***```time```*** if ***```time```*** is in the query.<br><br>
 11. ***```Opens Visual Studio Code```*** if ***```code```*** is in the query.
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The target path should be specified ***(software -> file location -> properties -> target path)***.<br><br>
