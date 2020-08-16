@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/python-used-bee5ed?colorA=37b6bd&colorB=3c9bb5&style=for-the-badge&logo=python)
 ![](https://img.shields.io/badge/visual_studio_code-1.47.3-181717?colorA=ae36d6&style=for-the-badge&logo=visual-studio-code)
 # :small_orange_diamond: credentials.json :warning:
-### For retrieving contact details from Google Contacts :busts_in_silhouette:
+### For getting access from Google Contacts using Gmail API :busts_in_silhouette:
 After generating Gmail API, the ```CLIENT CONFIGURATION``` will be saved as ***```credentials.json```***. It ***```should be kept in the working directory```***. otherwise contacts details can't be fetched from Google Contacts.
 # :small_orange_diamond: token.pickle :memo:
 All the details will be saved in ***```token.pickle```*** file and no further retrieving will be occurred if there is no change.
