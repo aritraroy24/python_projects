@@ -13,3 +13,12 @@
 ### screenshots :camera:
 :small_blue_diamond: Home page Screenshot<br>
 :small_blue_diamond: Game page Screenshot
+# :small_orange_diamond: flying_witch.py
+### Used Modules :green_book:
+   * pygame
+   * random
+   * os
+   * sys
+### Playing Guide :video_game:
+   * ***```Up Arrow```*** or ***```Space```*** for ```starting``` and ```playing``` the game
+   * ***```Crossbar```*** or ***```Esc```*** for ```quitting``` the game
