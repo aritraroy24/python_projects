@@ -7,5 +7,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 # Projects on Python
 ---
-* Flying Witch - Game made using ```***pygame module***``` :video_game: :arrow_up: :new_moon: 
-* Retrieving ```***contact details***``` from ```***Google Contacts***``` using 
+1. ***```Flying Witch```*** - Game made using ***```pygame module```*** :video_game: :arrow_up: :new_moon: 
+2. Retrieving ***```contact details```*** like **Name, Email ID and Phone Numnbers** from ***```Google Contacts```*** using ***```Gmail API```***
+3. Simple ***```Voice Assistant```*** has been made using if-else statements
