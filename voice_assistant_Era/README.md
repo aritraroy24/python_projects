@@ -43,5 +43,5 @@ All the details will be saved in ***```token.pickle```*** file and no further re
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: The ***contacts*** and associated ***phone numbers*** can be fetched using ***Gmail API***.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: For more details about **unlimited retrieving of contact details using Gmail API** please read my article published in ***```Medium```***<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(https://shorturl.at/hpWX5) :link:
 <br>&nbsp;&nbsp;&nbsp;&nbsp; :black_small_square: To make voice calls I've taken the help of ***Twilio account***.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: One'll need to get ***account_sid*** and ***auth_token*** (https://shorturl.at/biosN) :link:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: One'll need to get ***account_sid*** and ***auth_token*** (https://www.twilio.com/docs/voice/tutorials/how-to-make-outbound-phone-calls-python) :link:
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :white_small_square: Please note, ***One can only make call to the registered number for a limited trial period***. For full access **one'll need to pay**.
