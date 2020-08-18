@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/visual_studio_code-1.48.0-181717?colorA=ae36d6&style=for-the-badge&logo=visual-studio-code)
 ---
 ---
-# :small_orange_diamond: images :city_sunrise: :mount_fuji:
+# :small_orange_diamond: images :city_sunrise: :bridge_at_night:
 All the images required for the program has been kept here
 # :small_orange_diamond: video :video_camera:
 The video clip (which we want to review) has been kept here
