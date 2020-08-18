@@ -7,7 +7,7 @@ import imutils
 import time
 
 
-stream = cv2.VideoCapture("clip.mp4")
+stream = cv2.VideoCapture("./video/clip.mp4")
 flag = True
 def play(speed):
     global flag
@@ -29,7 +29,7 @@ def play(speed):
 
 def pending(decision):
     # 1. Display dicision pending image
-    frame = cv2.cvtColor(cv2.imread("pending.png"), cv2.COLOR_BGR2RGB)
+    frame = cv2.cvtColor(cv2.imread("./images/pending.png"), cv2.COLOR_BGR2RGB)
     frame = imutils.resize(frame, width=SET_WIDTH, height=SET_HEIGHT)
     frame = PIL.ImageTk.PhotoImage(image=PIL.Image.fromarray(frame))
     canvas.image = frame
@@ -37,7 +37,7 @@ def pending(decision):
     # 2. Wait for 2 second
     time.sleep(2)
     # 3. Display sponsor image
-    frame = cv2.cvtColor(cv2.imread("sponsor.png"), cv2.COLOR_BGR2RGB)
+    frame = cv2.cvtColor(cv2.imread("./images/sponsor.png"), cv2.COLOR_BGR2RGB)
     frame = imutils.resize(frame, width=SET_WIDTH, height=SET_HEIGHT)
     frame = PIL.ImageTk.PhotoImage(image=PIL.Image.fromarray(frame))
     canvas.image = frame
@@ -46,9 +46,9 @@ def pending(decision):
     time.sleep(1.25)
     # 5. Display out/not_out image
     if decision == 'out':
-        decisionImg = "out.png"
+        decisionImg = "./images/out.png"
     else:
-        decisionImg = "not_out.png"
+        decisionImg = "./images/not_out.png"
     frame = cv2.cvtColor(cv2.imread(decisionImg), cv2.COLOR_BGR2RGB)
     frame = imutils.resize(frame, width=SET_WIDTH, height=SET_HEIGHT)
     frame = PIL.ImageTk.PhotoImage(image=PIL.Image.fromarray(frame))
@@ -76,7 +76,7 @@ SET_HEIGHT = 365
 # Tkinter gui starts here
 window = tkinter.Tk()
 window.title("Third Umpire Dicision Review Kit")
-cv_img = cv2.cvtColor(cv2.imread("welcome.png"), cv2.COLOR_BGR2RGB)
+cv_img = cv2.cvtColor(cv2.imread("./images/welcome.png"), cv2.COLOR_BGR2RGB)
 canvas = tkinter.Canvas(window, width=SET_WIDTH, height=SET_HEIGHT)
 photo = PIL.ImageTk.PhotoImage(image=PIL.Image.fromarray(cv_img))
 image_on_canvas = canvas.create_image(0, 0, anchor=tkinter.NW, image=photo)
