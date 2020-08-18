@@ -18,7 +18,6 @@ The video clip (which we want to review) has been kept here
    * threading
    * imutils
    * time
-<br>
 ---
 ## Note: :memo:
 1. Basic ***```tkinter```*** module syntax has been used to make this software
