@@ -19,59 +19,30 @@ def msgLower(msglist):
     return msgListLowerSplit
 
 def morningMsgList():
-    morningList = ["Good Morning ... ",
-                "Good Morning ...❤️❤️❤️", 
-                "Good Morning ...Have a nice day ...", 
-                "Today is the future that we worried about yesterday. See, it’s not so bad. Here’s to a happy day.",
-                "Nothing is impossible when God is on your side. Good morning ...", 
-                "DREAMING or DOING is a choice that will mean the difference between FAILURE or SUCCESS. Good morning ...",
-                "Wake up every morning with the thought that something wonderful is about to happen. Good Morning ...",
-                "May rays of the morning sun light the fire in you to achieve big things in life. Good morning ...",
-                "Every morning gives each one of us 24 hours to fulfil our dreams. It’s just who is using that time the best possible way. Good Morning ...",
-                "No matter what, the morning is always beautiful. Embrace it to feel its beauty. Good Morning ...",
-                "Sunrises are the best; enjoy a cup of coffee or tea with yourself because this day is yours, good morning !!!  Have a wonderful day ahead.",
-                "A great end may not be decided but a good creative beginning can be planned and achieved. Good morning ... have a productive day!",
-                "I like the sunrises more than sunsets, they make me dream about us all day. Good Morning ...",
-                "Morning is not only sunrise but A Beautiful Miracle of God that defeats the darkness and spread light. Good Morning ...",
-                "Life never gives you a second chance. So, enjoy every bit of it. Why not start with this beautiful morning. Good Morning !!!",
-                "If you want to gain health and beauty, you should wake up early. Good Morning !!!",
-                "Nothing is in your hand except your Karma. Do good without any hope and desire. Good Morning ...",
-                "Accept the bouquet of flower. I know it won’t solve your problem, but it will give you a great start. Good Morning ...",
-                "Enjoy these moments now because they don't last forever. Good Morning ...",
-                "Start Your day with the sweetest smile. Good Morning"]
+    morningMsgFile = open('morningMsg.txt', "r") #opens the file morningMsg.txt in read mode
+    morningList = morningMsgFile.read().splitlines() #puts the file into an array
+    morningMsgFile.close()
+    print(morningList)
     finalMorningMsg = random.choice(morningList)
     return finalMorningMsg
 
 def nightMsgList():
-    nightList = ["Always end the day with a positive thought and grateful heart. Good Night !!!",
-                "If someone wishes you good night every day, You’re happier than so many people. Happy Good Night ...",
-                "I like the night. Without the dark, we’d never see the stars.Happy Good Night ...",
-                "Anything seems possible at night when the rest of the world has gone to sleep. Good Night",
-                "Please don’t let a bad day convince you that you have a bad life. Good Night !!!",
-                "May the night fill with stars for you. May counting every one, give you contentment!",
-                "Good night ... Have a sweet dream... ❤️❤️❤️",
-                "If you’re tired learn to rest, not quit. Good Night ...",
-                "As the day comes to an end, throw all your worries and troubles away. Have a blissful night full of beautiful dreams.",
-                "May your pillow be soft, and your rest be long! Good night ...",
-                "After an exhausting day, it is only fair that we have a sweet sleep. Have a magical night and sweet dreams. Good night.",
-                "May the stars and the moon comfort you as you sleep. Good night and have sweet dreams.",
-                "Good night ... May you have sweet dreams tonight.",
-                "I pray your sleep is accompanied by sweet dreams. Good night ...",
-                "Darkness cannot last forever. Keep the hope alive. Good night ...",
-                "Wishing you a good night where you can recharge for tomorrow!",
-                "Have a night that is noiseless and comfortable...",
-                "May the dreams you have tonight, come true tomorrow! You can do anything that is on your mind and in your heart! Good Night ...",
-                "Sleep your worries away tonight, for tomorrow will be better. Have a good night ...",
-                "Studies have shown that having a good night’s sleep has the ability to drastically wipe away our worries and fears. So sleep tight and have pleasant dreams. Good Night ..."]
+    nightMsgFile = open('nightMsg.txt', "r") #opens the file nightMsg.txt in read mode
+    nightList = nightMsgFile.read().splitlines() #puts the file into an array
+    nightMsgFile.close()
+    print(nightList)
     finalNightMsg = random.choice(nightList)
     return finalNightMsg
 
-names = ["Aritra (Airtel)", "Uchche - 1", "Arpita (PU-1)"]
+def readFile(fileName):
+        fileObj = open(fileName, "r") #opens the file contacts.txt in read mode
+        words = fileObj.read().splitlines() #puts the file into an array
+        fileObj.close()
+        return words
+names = readFile('contacts.txt')  # Create a contact.txt file in same folder
 
 if __name__ == '__main__':
     while True:
-        # t1 = str(datetime.now())
-        # timeThen = datetime.strptime(t1, '%Y-%m-%d %H:%M:%S.%f').strftime('%H:%M:%S')
         timeThen = str(datetime.now().strftime('%H:%M:%S'))
         
         if timeThen == "07:00:00":
