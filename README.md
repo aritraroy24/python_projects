@@ -11,4 +11,4 @@
 2. Retrieving ***```contact details```*** like **Name, Email ID and Phone Numnbers** from ***```Google Contacts```*** using ***```Gmail API```*** :busts_in_silhouette: :e-mail: :telephone_receiver: <br><br>
 3. ***```Flying Witch```*** - Game made using ***```pygame module```*** :video_game: :arrow_up: <br><br>
 4. Simple ***```Voice Assistant```*** has been made using ***```if-else```*** statements :speaking_head: <br><br>
-5. A ***```WhatsApp Bot```*** for wishing random **Good Morning & Good Morning** using ***```hSelenium```*** :speech_balloon: :robot:
+5. A ***```WhatsApp Bot```*** for wishing random **Good Morning & Good Night** messages using ***```Selenium```*** :speech_balloon: :robot:
