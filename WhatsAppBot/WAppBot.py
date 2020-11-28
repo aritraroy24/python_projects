@@ -47,67 +47,73 @@ if __name__ == '__main__':
         
         if timeThen == "07:00:00":
             for name in names:
-                person = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
-                person.click()
-
-                for i in range(1,3):
-                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-                msg_got = driver.find_elements_by_xpath('//div[@class="_1RAno message-out focusable-list-item"]//div//div//div//div//div//span[@class="_1VzZY selectable-text invisible-space copyable-text"]')
-                msglist = [message.text for message in msg_got]
-
-                day_check = driver.find_elements_by_xpath('//div[@class="_1ij5F KpuSa"]//span[@dir="auto"][@class="_1VzZY"]')
-                day = [days.text for days in day_check]
-                msgLowerList = msgLower(msglist)
-
                 try:
-                    msgFinalList = msgLowerList[-1]
-                    print(msgFinalList)
-                    flag = 0
-                    for msgWord in msgFinalList:
-                        if msgWord == "morning":
-                            flag = 1
-                            break
-                    if flag == 0 and day != "TODAY":
-                        reply = driver.find_element_by_xpath('//div[@data-tab="6"]')
-                        reply.clear()
-                        reply.send_keys(f"{morningMsgList()}")
-                        reply.send_keys(Keys.RETURN)
-                        print(f"Sent to {name}")
-                    else:
-                        print(f"Already sent to {name}")
+                    person = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
+                    person.click()
+
+                    for i in range(1,3):
+                        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+                    msg_got = driver.find_elements_by_xpath('//div[@class="_1RAno message-out focusable-list-item"]//div//div//div//div//div//span[@class="_1VzZY selectable-text invisible-space copyable-text"]')
+                    msglist = [message.text for message in msg_got]
+
+                    day_check = driver.find_elements_by_xpath('//div[@class="_1ij5F KpuSa"]//span[@dir="auto"][@class="_1VzZY"]')
+                    day = [days.text for days in day_check]
+                    msgLowerList = msgLower(msglist)
+
+                    try:
+                        msgFinalList = msgLowerList[-1]
+                        print(msgFinalList)
+                        flag = 0
+                        for msgWord in msgFinalList:
+                            if msgWord == "morning":
+                                flag = 1
+                                break
+                        if flag == 0 and day != "TODAY":
+                            reply = driver.find_element_by_xpath('//div[@data-tab="6"]')
+                            reply.clear()
+                            reply.send_keys(f"{morningMsgList()}")
+                            reply.send_keys(Keys.RETURN)
+                            print(f"Sent to {name}")
+                        else:
+                            print(f"Already sent to {name}")
+                    except:
+                        print("Something went wrong...")
                 except:
                     print("Something went wrong...")
         
-        elif timeThen == "23:30:00":
+        elif timeThen == "23:45:00":
             for name in names:
-                person = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
-                person.click()
-
-                for i in range(1,3):
-                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-                msg_got = driver.find_elements_by_xpath('//div[@class="_1RAno message-out focusable-list-item"]//div//div//div//div//div//span[@class="_1VzZY selectable-text invisible-space copyable-text"]')
-                msglist = [message.text for message in msg_got]
-
-                day_check = driver.find_elements_by_xpath('//div[@class="_1ij5F KpuSa"]//span[@dir="auto"][@class="_1VzZY"]')
-                day = [days.text for days in day_check]
-                msgLowerList = msgLower(msglist)
-
                 try:
-                    msgFinalList = msgLowerList[-1]
-                    flag = 0
-                    for msgWord in msgFinalList:
-                        if msgWord == "night":
-                            flag = 1
-                            break
-                    if flag == 0 and day != "TODAY":
-                        reply = driver.find_element_by_xpath('//div[@data-tab="6"]')
-                        reply.clear()
-                        reply.send_keys(f"{nightMsgList()}")
-                        reply.send_keys(Keys.RETURN)
-                        print(f"Sent to {name}")
-                    else:
-                        print(f"Already sent to {name}")
+                    person = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
+                    person.click()
+
+                    for i in range(1,3):
+                        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+                    msg_got = driver.find_elements_by_xpath('//div[@class="_1RAno message-out focusable-list-item"]//div//div//div//div//div//span[@class="_1VzZY selectable-text invisible-space copyable-text"]')
+                    msglist = [message.text for message in msg_got]
+
+                    day_check = driver.find_elements_by_xpath('//div[@class="_1ij5F KpuSa"]//span[@dir="auto"][@class="_1VzZY"]')
+                    day = [days.text for days in day_check]
+                    msgLowerList = msgLower(msglist)
+
+                    try:
+                        msgFinalList = msgLowerList[-1]
+                        flag = 0
+                        for msgWord in msgFinalList:
+                            if msgWord == "night":
+                                flag = 1
+                                break
+                        if flag == 0 and day != "TODAY":
+                            reply = driver.find_element_by_xpath('//div[@data-tab="6"]')
+                            reply.clear()
+                            reply.send_keys(f"{nightMsgList()}")
+                            reply.send_keys(Keys.RETURN)
+                            print(f"Sent to {name}")
+                        else:
+                            print(f"Already sent to {name}")
+                    except:
+                        print("Something went wrong...")
                 except:
                     print("Something went wrong...")
