@@ -84,7 +84,7 @@ if __name__ == '__main__':
                     print("Something went wrong...")
                     pass
         
-        elif timeThen == "00:21:00":
+        elif timeThen == "23:30:00":
             for name in names:
                 try:
                     person = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
