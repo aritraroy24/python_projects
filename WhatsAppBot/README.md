@@ -21,11 +21,12 @@ List of 20 different Good Night messages for sending random Good Night messages.
 :small_red_triangle: ***datetime*** <br>
 :small_red_triangle: ***random*** <br>
 ## Process: :point_down:
-#### All the necessary steps for retrieving the contact details from Google Contacts are following -
+#### All the necessary steps for starting the script -
 :small_blue_diamond: **```Fork```** and **```Star```** the repository. **Clone** it to make your own local copy. <br><br>
 :small_blue_diamond: Install the **selenium module** using ***```pip install selenium```*** and navigate to your folder. <br><br>
 :small_blue_diamond: Put your contacts in the [**```contact.txt```**](https://github.com/aritraroy24/python_projects/blob/master/WhatsAppBot/contact.txt) file [Do it in your local copy] and change the file name to ***```contact.txt```*** in the code in line no. **42** <br><br>
-:small_blue_diamond: You can add or change **Good Morning** messages or **Good Night** messages by modifying ***morningMsg.txt*** file or ***nightMsg.txt*** <br><br>
+:small_blue_diamond: You can add or change **Good Morning** messages or **Good Night** messages by modifying [***morningMsg.txt***](https://github.com/aritraroy24/python_projects/blob/master/WhatsAppBot/morningMsg.txt) file or [***nightMsg.txt***](https://github.com/aritraroy24/python_projects/blob/master/WhatsAppBot/nightMsg.txt) <br><br>
+:small_blue_diamond: Open your terminal, nevigate to that folder and give the command - ***```python WAppBot.py```***
 
 ----
 #### :warning: You have to ```scan the QR Code``` for starting WhatsApp Web using your phone while starting the application.
