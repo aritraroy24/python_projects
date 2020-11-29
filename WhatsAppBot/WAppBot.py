@@ -22,7 +22,7 @@ def morningMsgList():
     morningMsgFile = open('morningMsg.txt', "r") #opens the file morningMsg.txt in read mode
     morningList = morningMsgFile.read().splitlines() #puts the file into an array
     morningMsgFile.close()
-    print(morningList)
+    # print(morningList)
     finalMorningMsg = random.choice(morningList)
     return finalMorningMsg
 
@@ -30,7 +30,7 @@ def nightMsgList():
     nightMsgFile = open('nightMsg.txt', "r") #opens the file nightMsg.txt in read mode
     nightList = nightMsgFile.read().splitlines() #puts the file into an array
     nightMsgFile.close()
-    print(nightList)
+    # print(nightList)
     finalNightMsg = random.choice(nightList)
     return finalNightMsg
 
@@ -63,7 +63,7 @@ if __name__ == '__main__':
 
                     try:
                         msgFinalList = msgLowerList[-1]
-                        print(msgFinalList)
+                        # print(msgFinalList)
                         flag = 0
                         for msgWord in msgFinalList:
                             if msgWord == "morning":
@@ -78,11 +78,13 @@ if __name__ == '__main__':
                         else:
                             print(f"Already sent to {name}")
                     except:
-                        print("Something went wrong...")
+                        print("Array length problem...")
+                        pass
                 except:
                     print("Something went wrong...")
+                    pass
         
-        elif timeThen == "23:45:00":
+        elif timeThen == "00:21:00":
             for name in names:
                 try:
                     person = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
@@ -114,6 +116,8 @@ if __name__ == '__main__':
                         else:
                             print(f"Already sent to {name}")
                     except:
-                        print("Something went wrong...")
+                        print("Array length problem...")
+                        pass
                 except:
                     print("Something went wrong...")
+                    pass
