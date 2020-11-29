@@ -19,8 +19,7 @@ List of 20 different Good Night messages for sending random Good Night messages.
 :small_red_triangle: ***selenium*** <br>
 :small_red_triangle: ***time*** <br>
 :small_red_triangle: ***datetime*** <br>
-:small_red_triangle: ***random***
-<br><br>
+:small_red_triangle: ***random*** <br>
 ## Process: :point_down:
 #### All the necessary steps for retrieving the contact details from Google Contacts are following -
 :small_blue_diamond: **```Fork```** and **```Star```** the repository. **Clone** it to make your own local copy. <br><br>
