@@ -26,6 +26,7 @@ List of 20 different Good Night messages for sending random Good Night messages.
 :small_blue_diamond: Install the **selenium module** using ***```pip install selenium```*** and navigate to your folder. <br><br>
 :small_blue_diamond: Put your contacts in the [**```contact.txt```**](https://github.com/aritraroy24/python_projects/blob/master/WhatsAppBot/contact.txt) file [Do it in your local copy] and change the file name to ***```contact.txt```*** in the code in line no. **42** <br><br>
 :small_blue_diamond: You can add or change **Good Morning** messages or **Good Night** messages by modifying ***morningMsg.txt*** file or ***nightMsg.txt*** <br><br>
+
 ----
 #### :warning: You have to ```scan the QR Code``` for starting WhatsApp Web using your phone while starting the application.
 #### :warning: You have to ```set the xpath``` (in line no. **57** and line no. **60**) by using Chrome Developer options.
