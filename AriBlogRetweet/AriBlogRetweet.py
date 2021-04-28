@@ -2,14 +2,13 @@
 from time import sleep
 import tweepy
 import datetime
-import Keys
+from decouple import config
 
 # Keys
-CONSUMER_KEY = Keys.Consumer_Key
-CONSUMER_SECRET_KEY = Keys.Consumer_Secret_Key
-ACCESS_TOKEN = Keys.Access_Token
-ACCESS_TOKEN_SECRET = Keys.Access_Token_Secret
-
+CONSUMER_KEY = config('Consumer_Key')
+CONSUMER_SECRET_KEY = config('Consumer_Secret_Key')
+ACCESS_TOKEN = config('Access_Token')
+ACCESS_TOKEN_SECRET = config('Access_Token_Secret')
 # Authentication
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET_KEY)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
